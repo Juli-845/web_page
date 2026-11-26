@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Table</title>
+
+    <style>
+        table {
+            width: 85%;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 12px;
+        }
+
+        .title {
+            background-color: #20547c;
+            color: yellow;
+            font-size: 25px;
+        }
+
+        .routine {
+            background-color: yellow;
+            color: red;
+            font-size: 18px;
+        }
+
+        .heading {
+            background-color: yellowgreen;
+        }
+
+        .days {
+            background-color: yellowgreen;
+            font-weight: bold;
+        }
+
+        .break {
+            background-color: yellowgreen;
+            font-size: 22px;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
+        .practical {
+            height: 55px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <!-- Title -->
+        <tr>
+            <th colspan="11" class="title">
+                TIME TABLE
+            </th>
+        </tr>
+
+        <!-- Routine -->
+        <tr>
+            <th colspan="11" class="routine">
+                ROUTINE FOR CLASS XII
+            </th>
+        </tr>
+
+        <!-- Headings -->
+        <tr class="heading">
+            <th>DAYS</th>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
+            <th>4th</th>
+
+            <th rowspan="4" class="break">
+                BREAK
+            </th>
+
+            <th>5th</th>
+            <th>6th</th>
+            <th>7th</th>
+            <th>8th</th>
+            <th>EXTRA<br>CLASS</th>
+        </tr>
+
+        <!-- Monday -->
+        <tr>
+            <th class="days">MONDAY</th>
+
+            <td><u>ENGLISH</u></td>
+            <td><u>MATHS</u></td>
+            <td>OPTIONAL</td>
+            <td>ENGLISH</td>
+
+            <td colspan="2" class="practical">
+                PHYSICS<br>PRACTICAL
+            </td>
+
+            <td colspan="2" class="practical">
+                CHEMISTRY<br>PRACTICAL
+            </td>
+
+            <td>ENGLISH</td>
+        </tr>
+
+        <!-- Tuesday -->
+        <tr>
+            <th class="days">TUESDAY</th>
+
+            <td>PHYSICS</td>
+            <td>ENGLISH</td>
+            <td>OPTIONAL</td>
+            <td>CHEM</td>
+
+            <td>ENGLISH</td>
+            <td>MATHS</td>
+            <td>MATHS</td>
+            <td><u>LIBRARY</u></td>
+            <td>PHYSICS</td>
+        </tr>
+
+        <!-- Wednesday -->
+        <tr>
+            <th class="days">WEDNESDAY</th>
+
+            <td colspan="2">OPTIONAL</td>
+            <td>MATHS</td>
+            <td>CHEM</td>
+
+            <td>PHYSICS</td>
+            <td>ENGLISH</td>
+            <td>PHYSICS</td>
+            <td>CHEM</td>
+            <td>MATHS</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

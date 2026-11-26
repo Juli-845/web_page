@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+
+<body>
+
+    <h1>Feedback Form</h1>
+
+    <form action="#" method="post">
+
+        <!-- Select with Optgroup -->
+        <label for="service">Select Service:</label>
+
+        <select id="service" name="service" required>
+            <option value="">Choose a Service</option>
+
+            <optgroup label="Education">
+                <option value="online_course">Online Course</option>
+                <option value="classroom">Classroom Teaching</option>
+            </optgroup>
+
+            <optgroup label="Technology">
+                <option value="website">Website</option>
+                <option value="mobile_app">Mobile App</option>
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <!-- Feedback -->
+        <label for="feedback">Your Feedback:</label>
+        <br>
+
+        <textarea id="feedback" name="feedback" rows="5" cols="35" placeholder="Write your feedback here..."
+            aria-label="Write your feedback">
+        </textarea>
+
+        <br><br>
+
+        <!-- Rating -->
+        <label for="rating">Rate Our Service (1-10):</label>
+
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5"
+            aria-label="Rate our service from 1 to 10">
+
+        <br><br>
+
+        <!-- Date -->
+        <label for="date">Feedback Date:</label>
+
+        <input type="date" id="date" name="date" aria-label="Select feedback date">
+
+        <br><br>
+
+        <!-- Button -->
+        <button type="submit" aria-label="Submit your feedback">
+            Submit Feedback
+        </button>
+
+    </form>
+
+</body>
+
+</html>
